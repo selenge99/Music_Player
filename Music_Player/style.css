@@ -1,25 +1,25 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display:flex;
-    flex-direction: column;
-    gap:20px;
-    align-items: center;
-    background:#333
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: #333;
 }
 
 h1 {
-   font-size:50px;
-    color: white;
-    margin-top:200px;
+  font-size: 50px;
+  color: white;
+  margin-top: 200px;
 }
 
 .container {
-    width: 600px;
+  width: 600px;
   height: 150px;
   margin-top: 100px;
   background: rgb(231, 231, 231);
@@ -35,71 +35,69 @@ h1 {
   gap: 50px;
   padding-right: 100px;
   position: relative;
-
 }
 
-.disk {
-    width: 170px;
-    height: 170px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./assets/hey-lettering-design-illustration_23-2149543967.avif);
-    background-size: cover;
-    animation-name: turn;
-    animation-duration: 8s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: normal;
-  
+.disk img {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(./assets/hey-lettering-design-illustration_23-2149543967.avif) ; */
+  background-size: cover;
+  animation-name: turn;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
 }
 
-#hole {
-    width: 27px;
+img {
+  width: 27px;
   height: 27px;
-  background-color:#333;
+  background-color: #333;
   border-radius: 50%;
   position: absolute;
 }
 
-button{
-    width:60px;
-    height: 60px;
-    border-radius: 50%;
-   background: #fff;
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   color: #f53192;
-   box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
-   cursor: pointer;
-   border-color:#f53192;
- 
-   
-   
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f53192;
+  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+  border-color: #f53192;
 }
 
 button i {
-    font-size: 25px;
-  
+  font-size: 25px;
 }
 
 @keyframes turn {
-    from {
-      transform: rotate(0);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0);
   }
-
-  .hide {
-    display: none !important;
+  to {
+    transform: rotate(360deg);
   }
+}
 
+.hide {
+  display: none !important;
+}
+
+.songTitle {
+  size: 20px;
+  color: orange;
+}
